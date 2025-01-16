@@ -27,9 +27,9 @@ const ProjectCards = ({ projectName, projectCompleted, projectDescription, proje
                 >
                     <Card.Body >
                         <Card.Title fontSize={["xs", "sm", "md", "md", ]}>{projectName}</Card.Title>
-                        <HStack mt={2} >
+                        <HStack color={iconColor} mt={2} >
                             {projectStack.map((Icon, index) => (
-                                <Icon color={iconColor} key={index} >
+                                <Icon  color={iconColor} key={index} >
                                     {React.createElement(Icon)}
                                 </Icon>
                             ))}

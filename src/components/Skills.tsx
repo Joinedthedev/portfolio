@@ -1,9 +1,9 @@
+import { Icon, PopoverOpenChangeDetails } from '@chakra-ui/react'
 import React, { useState } from 'react'
-import { Button, CollapsibleContent, CollapsibleRoot, CollapsibleTrigger, HStack, Icon, PopoverOpenChangeDetails } from '@chakra-ui/react'
 import { SkillProps, } from '../data/SkillsData'
-import { Tooltip } from './ui/tooltip'
-import { PopoverArrow, PopoverRoot, PopoverBody, PopoverTrigger, PopoverContent } from './ui/popover'
 import { useColorModeValue } from './ui/color-mode'
+import { PopoverArrow, PopoverBody, PopoverContent, PopoverRoot, PopoverTrigger } from './ui/popover'
+import { Tooltip } from './ui/tooltip'
 const Skills = ({ name, logo, description }: SkillProps) => {
     const [open, setOpen] = useState(false)
     const handleOpenChange = (e: PopoverOpenChangeDetails) => {

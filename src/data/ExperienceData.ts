@@ -1,8 +1,7 @@
 import CSL from "../assets/CSL.jpg"
-import nileLogo from "../assets/nile uni.jpg"
 import inclusiveLogo from "../assets/inclusiveislam_logo.jpg"
+import nileLogo from "../assets/nile uni.jpg"
 import ubecLogo from "../assets/ubecLogo.png"
-import Me from "../assets/Professional.jpg"
 export type experienceTimeLineProps = {
     nameOfCompany: string;
     position: string;

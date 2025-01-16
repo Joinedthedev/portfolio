@@ -97,7 +97,7 @@ export const projectCardArray: ProjectCardProps[] = [
         projectDescription: "A personal blog where I write about my journey as a developer, and share my thoughts on tech and life.",
         projectThumbnail: wip,
         projectLink: " https://github.com/Joinedthedev/budget-app,",
-        projectCompleted: true,
+        projectCompleted: false,
         projectStack: [
             SiNextdotjs,
             SiJavascript,

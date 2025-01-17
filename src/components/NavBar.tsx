@@ -1,11 +1,8 @@
 import { Flex, Icon, IconButton, Link, useBreakpointValue } from '@chakra-ui/react';
 import { GrGithub, GrLinkedinOption, GrMail } from "react-icons/gr";
-import { ColorModeButton, useColorMode } from './ui/color-mode';
-import { MenuContent, MenuItem, MenuRoot, MenuTrigger, } from "./ui/menu"
-import { FaHamburger } from 'react-icons/fa';
-import { GiHamburgerMenu } from 'react-icons/gi';
 import { RxHamburgerMenu } from 'react-icons/rx';
-import { useColorModeValue } from './ui/color-mode';
+import { ColorModeButton, useColorModeValue } from './ui/color-mode';
+import { MenuContent, MenuItem, MenuRoot, MenuTrigger, } from "./ui/menu";
 
 export const NavBar = () => {
     const isMobile = useBreakpointValue({ base: true, xs: true, sm: true, md: false, lg: false });

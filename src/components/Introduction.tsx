@@ -1,5 +1,4 @@
-import { Heading, Box, HStack } from '@chakra-ui/react'
-import React from 'react'
+import { Heading, HStack } from '@chakra-ui/react'
 import Typewriter from 'typewriter-effect'
 
 const Introduction = () => {

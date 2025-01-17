@@ -1,6 +1,5 @@
 import { IconType } from "react-icons";
-import { RiCss3Fill, RiFirebaseFill, RiHtml5Fill, RiJavascriptFill, RiNextjsFill, RiReactjsFill } from "react-icons/ri";
-import { SiBootstrap, SiChakraui, SiCss3, SiFirebase, SiHtml5, SiJavascript, SiMysql, SiNextdotjs, SiNextui, SiPhp, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiBootstrap, SiChakraui, SiCss3, SiFirebase, SiHtml5, SiJavascript, SiMysql, SiNextdotjs, SiPhp, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 
 export type SkillProps = {

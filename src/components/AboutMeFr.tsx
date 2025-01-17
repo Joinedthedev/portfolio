@@ -1,5 +1,5 @@
-import { Box, VStack, Button, CollapsibleContent, CollapsibleRoot, CollapsibleTrigger, Heading, HStack, Image, Text, useBreakpointValue } from '@chakra-ui/react'
-import me from '../assets/Professional.jpg'
+import { Box, Button, CollapsibleContent, CollapsibleRoot, CollapsibleTrigger, Heading, HStack, Image, Text, useBreakpointValue, VStack } from '@chakra-ui/react'
+
 import { skillsArray } from '../data/SkillsData'
 import Skills from './Skills'
 import { useColorModeValue } from './ui/color-mode'
@@ -7,7 +7,7 @@ const AboutMeFr = () => {
 
   const isMobile = useBreakpointValue({ base: true, xs: true, sm: true, md: false, lg: false });
   const colorVibrant = useColorModeValue("blue.500", "blue.300");
-  const bgColor = useColorModeValue("blue.50", "gray.900")
+ 
   return (
     <HStack p={7} mt={"100px"} wrap={isMobile ? "wrap" : "nowrap"} justifyContent={isMobile ? "space-between" : ""} alignItems={"center"}>
       <Box maxW={isMobile ? "100%" : "50%"} >
@@ -46,7 +46,7 @@ const AboutMeFr = () => {
           borderRadius="full"
           fit="cover"
           boxSize={"200px"}
-          src={me} />
+          src="/Professional.jpg" />
 
         <Button bg ={colorVibrant} mt={2} ml={10} size={"sm"}> Contact Me</Button>
       </VStack>
@@ -56,7 +56,7 @@ const AboutMeFr = () => {
             borderRadius="full"
             fit="cover"
             boxSize={"300px"}
-            src={me} />
+            src="/Professional.jpg" />
 
           <Button bg ={colorVibrant}> Contact Me</Button>
         </VStack>

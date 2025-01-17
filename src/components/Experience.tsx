@@ -7,7 +7,7 @@ import { TimelineRoot } from './ui/timeline';
 
 const Experience = () => {
 
-    const [experienceArray, setExperienceArray] = useState(experiences);
+    const [experienceArray] = useState(experiences);
 
     const isDesktop = useBreakpointValue({ base: false, xs: false, sm: false, md: false, lg: true });
     return (

@@ -23,6 +23,7 @@ const ExperienceTimeLine = ({ companyLink, nameOfCompany, position, date, logo, 
                         <TimelineConnector>
                             <Image
                                 borderRadius={"full"}
+                                objectFit={"cover"}
                                 src={logo} />
                         </TimelineConnector>
                         <TimelineContent>

@@ -1,4 +1,5 @@
 import { IconType } from "react-icons";
+import { FaBullseye } from "react-icons/fa";
 
 import { SiBootstrap, SiChakraui, SiCss3, SiFirebase, SiHtml5, SiJavascript, SiMysql, SiNextdotjs, SiPrisma, SiReact, SiRecoil, SiRedux, SiStripe, SiTailwindcss, SiTypescript, SiVite } from "react-icons/si";
 export type ProjectCardProps = {
@@ -18,9 +19,8 @@ export const projectCardArray: ProjectCardProps[] = [
         projectName: "Personal Blog",
         projectDescription: "A personal blog where I write about my journey as a developer, and share my thoughts on tech and life.",
         projectThumbnail: "/wip.png",
-        isPublic: true,
+        isPublic: false,
         isLive: false,
-        codeLink: " https://github.com/Joinedthedev/budget-app,",
         projectCompleted: false,
         projectStack: [
             SiNextdotjs,

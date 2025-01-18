@@ -11,12 +11,16 @@ const AboutMeFr = () => {
   return (
     <HStack id='about-me' p={7} mt={"100px"} wrap={isMobile ? "wrap" : "nowrap"} justifyContent={isMobile ? "space-between" : ""} alignItems={"center"}>
       <Box maxW={isMobile ? "100%" : "50%"} >
-        <Heading fontSize={[ "2xl", "3xl"]}>About Me</Heading>
+        <VStack align={"flex-start"} justifySelf={"flex-start"} mb={1}>
+          <Heading fontSize={[ "2xl", "3xl"]}>About Me</Heading>
+          <Heading fontWeight={"light"} fontSize={["lg", " xl"]}> Learn a little about me.</Heading>
+        </VStack>
 
         <Text textAlign={isMobile ? 'justify' : "left"} pt={2} fontSize={["lg", "xl"]}>
           I love to build and I love to solve problems. Lucky for me, it just so happens that to solve problems,
-          you need to build solutions. So I build things. I'm a Software Engineer with a knack for creative solutions, a Computer Science graduate, and a writer(on my free time).
-          I'm always eager to learn new tech, solve new problems, then rinse and repeat on my own or with a team.
+          you need to build solutions. So I build things. I'm a Software Engineer with a knack for creative solutions, a Computer Science Graduate, and a writer on my free time.
+          I'm always eager to learn new tech, solve new problems, then rinse and repeat on my own or with a team. I'm currently working on a blog (coming very very soon) where I can properly yap but for now,
+          check out what I've been up to below!
         </Text>
 
         <HStack mt={2} align={"center"} gap={5}>

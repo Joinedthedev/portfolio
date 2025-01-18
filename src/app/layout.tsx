@@ -17,8 +17,8 @@ export default function RootLayout({
             <body>
                 <div id="root">
                     <Provider>
-                        <ColorModeProvider>{
-                            children}
+                        <ColorModeProvider>
+                        {children}
                         </ColorModeProvider>
                     </Provider>
                 </div>

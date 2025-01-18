@@ -33,7 +33,7 @@ const ExperienceTimeLine = ({ companyLink, nameOfCompany, position, date, logo, 
                                 <TimelineDescription>🏢 {nameOfCompany}</TimelineDescription>
                             </Link>
                             <TimelineDescription>📍 {location}</TimelineDescription>
-                            <Text fontSize={["xs", "xs", "sm", "sm", ]}>
+                            <Text fontSize={["sm", "sm", "md", "md", ]}>
                                 {description}
                             </Text>
 

@@ -12,7 +12,7 @@ function App() {
   const bgColor = useColorModeValue("blue.50", "gray.900")
   return (
     <>
- <Box bg={bgColor}>
+ <Box  bg={bgColor}>
    <NavBar/>
    <Introduction/>
    <AboutMeFr/>

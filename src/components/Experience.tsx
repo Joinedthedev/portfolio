@@ -12,7 +12,7 @@ const Experience = () => {
     const isDesktop = useBreakpointValue({ base: false, xs: false, sm: false, md: false, lg: true });
     return (
 
-        <Box id='exp' mt={"100px"} p={7}>
+        <Box id="exp" mt={isDesktop? "100px": "60px"} p={7}>
             <VStack p={3} gap={2}>
                 <Heading fontSize={["xl", "1xl", "2xl", "3xl"]}> Experience </Heading>
                 <Heading fontSize={["md", " lg"]}> Here's what my journey looks like so far.</Heading>

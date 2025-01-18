@@ -28,7 +28,7 @@ const ProjectCards = ({ projectName, codeLink, liveLink, isLive, projectComplete
 
                 >
                     <Card.Body >
-                        <Card.Title fontSize={["xs", "sm", "md", "md",]}>{projectName}</Card.Title>
+                        <Card.Title fontSize={[ "md", "md",]}>{projectName}</Card.Title>
                         <HStack color={iconColor} mt={2} >
                             {projectStack.map((Icon, index) => (
                                 <Icon color={iconColor} key={index} >
@@ -36,17 +36,17 @@ const ProjectCards = ({ projectName, codeLink, liveLink, isLive, projectComplete
                                 </Icon>
                             ))}
                         </HStack >
-                        <Card.Description fontSize={["xs", "sm", "md", "md",]} mt={2}>{projectDescription}</Card.Description>
+                        <Card.Description fontSize={[ "sm", "md", "md",]} mt={2}>{projectDescription}</Card.Description>
 
 
                         <HStack>
                             <Link href={codeLink} mt={3}>
-                                <Button disabled={!isPublic}  size={["xs", "sm", "md", "md",]} >
+                                <Button disabled={!isPublic}  size={["md",]} >
                                     Code <SiGithub />
                                 </Button>
                             </Link>
                             <Link href={liveLink} mt={3}>
-                                <Button disabled={!isLive} size={["xs", "sm", "md", "md",]} bg={colorVibrant}> Website <PiGlobeThin />
+                                <Button disabled={!isLive} size={["md",]} bg={colorVibrant}> Website <PiGlobeThin />
                                 </Button>
                             </Link>
                         </HStack>

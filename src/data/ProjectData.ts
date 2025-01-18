@@ -72,7 +72,7 @@ export const projectCardArray: ProjectCardProps[] = [
         codeLink: " https://github.com/Joinedthedev/amazon-clone",
         projectCompleted: true,
         isPublic: true,
-        isLive: true,
+        isLive: false,
         projectStack: [
             SiReact,
             SiJavascript,
@@ -148,7 +148,7 @@ export const projectCardArray: ProjectCardProps[] = [
         codeLink: "https://github.com/Joinedthedev/TypeScript-Hangman",
         projectCompleted: true,
         isPublic: true,
-        isLive: true,
+        isLive: false,
         projectStack: [
             SiReact,
             SiTypescript,

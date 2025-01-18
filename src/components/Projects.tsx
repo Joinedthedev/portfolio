@@ -15,7 +15,7 @@ const Projects = () => {
     return (
         <Box display={"flex"} flexDirection={"column"} id='projects' justifyContent={"center"} alignItems={"center"} mt={"75px"} p={7}>
             <VStack mb={9}>
-                <Heading fontSize={["xl", "1xl", "2xl", "3xl"]}> Projects </Heading>
+                <Heading fontSize={[ "2xl", "3xl"]}> Projects </Heading>
                 <Heading fontWeight={"light"} fontSize={["lg", " xl"]}> Some cool stuff I've built.</Heading>
             </VStack>
             <Box >

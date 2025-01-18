@@ -25,7 +25,7 @@ export const experiences: experienceTimeLineProps[] = [
         position: "Frontend Engineer Intern",
         nameOfCompany: "CompSciLib",
         location: "Deleware USA, Remote",
-        date: "Jan 2024- Apr 2024",
+        date: "Jan 2024-Apr 2024",
         logo: "/CSL.jpg",
         description: " Engineered dynamic flashcards and an interactive drag and drop quiz based on user selected course" +
             " content for a platform with 85k+ users using React, Typescript, and Next",

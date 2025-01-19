@@ -43,7 +43,7 @@ const Experience = () => {
                 })}
 
             </SimpleGrid> :
-                <TimelineRoot size={"lg"}>
+                <TimelineRoot size={"sm"}>
 
                     {experienceArray.map((experience, index) => {
                         return (

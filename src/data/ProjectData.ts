@@ -72,7 +72,8 @@ export const projectCardArray: ProjectCardProps[] = [
         codeLink: " https://github.com/Joinedthedev/amazon-clone",
         projectCompleted: true,
         isPublic: true,
-        isLive: false,
+        isLive: true,
+        liveLink:"https://amazon-clone-bay-two.vercel.app/",
         projectStack: [
             SiReact,
             SiJavascript,
@@ -86,7 +87,7 @@ export const projectCardArray: ProjectCardProps[] = [
         projectName: "Fantasy Football Manager",
         projectDescription: "A web application that allows users to create and manage their own fantasy football team.",
         projectThumbnail: "/FFM.png",
-        codeLink: "",
+        codeLink: "https://github.com/Joinedthedev/football-manager-app",
         isPublic: true,
         isLive: true,
         liveLink: "https://football-manager-app-woad.vercel.app/",
@@ -148,7 +149,8 @@ export const projectCardArray: ProjectCardProps[] = [
         codeLink: "https://github.com/Joinedthedev/TypeScript-Hangman",
         projectCompleted: true,
         isPublic: true,
-        isLive: false,
+        isLive: true,
+        liveLink:"https://type-script-hangman.vercel.app/",
         projectStack: [
             SiReact,
             SiTypescript,
@@ -166,7 +168,7 @@ export const projectCardArray: ProjectCardProps[] = [
         projectCompleted: true,
         isPublic: true,
         isLive: true,
-        liveLink: "",
+        liveLink: " https://joinedthedev.github.io/random-gif-generator/",
         projectStack: [
             SiJavascript,
             SiCss3,

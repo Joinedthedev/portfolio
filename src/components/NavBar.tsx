@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
 import { Flex, Icon, IconButton, Link, useBreakpointValue } from '@chakra-ui/react';
-import { GrGithub, GrLinkedinOption, GrMail } from "react-icons/gr";
+import { GrGithub, GrLinkedinOption, GrMail, GrYoutube } from "react-icons/gr";
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { ColorModeButton, useColorModeValue } from './ui/color-mode';
 import { MenuContent, MenuItem, MenuRoot, MenuTrigger, } from "./ui/menu";
 import { Link as ScrollLink } from 'react-scroll'
+import { SiYoutube } from 'react-icons/si';
 
 export const NavBar = () => {
     const isMobile = useBreakpointValue({ base: true, xs: true, sm: true, md: false, lg: false });
@@ -57,7 +58,7 @@ export const NavBar = () => {
                 <MenuRoot>
                     <MenuTrigger>
                         <IconButton color={iconColor} bg={"none"}>
-                            <RxHamburgerMenu  />
+                            <RxHamburgerMenu />
                         </IconButton>
                     </MenuTrigger>
                     <MenuContent>
@@ -65,10 +66,10 @@ export const NavBar = () => {
                             <ScrollLink smooth={true} duration={500} to={"about-me"} > About Me</ScrollLink>
                         </MenuItem>
                         <MenuItem value='Experience'>
-                            <ScrollLink style={{cursor:"pointer"}} smooth={true} duration={500} to='exp'> Experience</ScrollLink>
+                            <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} to='exp'> Experience</ScrollLink>
                         </MenuItem>
                         <MenuItem value='Projects'>
-                            <ScrollLink style={{cursor:"pointer"}} smooth={true} duration={500} to='projects'> Projects</ScrollLink>
+                            <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} to='projects'> Projects</ScrollLink>
                         </MenuItem>
                         {/* <MenuItem value='Extras'>
                             <ScrollLink style={{cursor:"pointer"}} smooth={true} duration={500} to='exp'> Extras</ScrollLink>
@@ -77,13 +78,20 @@ export const NavBar = () => {
                 </MenuRoot>
             ) : (
                 <Flex gap={4} direction={"row"}>
-                    <ScrollLink style={{cursor:"pointer"}} smooth={true} duration={500} to='about-me'> About Me</ScrollLink>
-                    <ScrollLink style={{cursor:"pointer"}} smooth={true} duration={500} to='exp'> Experience</ScrollLink>
-                    <ScrollLink style={{cursor:"pointer"}} smooth={true} duration={500} to='projects'> Projects</ScrollLink>
+                    <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} to='about-me'> About Me</ScrollLink>
+                    <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} to='exp'> Experience</ScrollLink>
+                    <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} to='projects'> Projects</ScrollLink>
                     {/* <ScrollLink style={{cursor:"pointer"}} to='#extras'> Extras</ScrollLink> */}
                 </Flex>
             )}
-            <Flex ml={"auto"} gap={2}>
+            <Flex align={"center"} ml={"auto"} gap={2}>
+
+            <Link href="https://www.youtube.com/@SalimCantCode">
+                    <Icon color={iconColor} size={'lg'} bg={"none"}>
+                        <GrYoutube />
+                    </Icon>
+                </Link>
+                
                 <Link href='https://www.linkedin.com/in/salim-babaji'>
                     <Icon color={iconColor} size={'lg'} bg={"none"}>
                         <GrLinkedinOption />

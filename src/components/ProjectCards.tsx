@@ -52,7 +52,7 @@ const ProjectCards = ({ projectName, codeLink, liveLink, isLive, projectComplete
                         </HStack>
                     </Card.Body>
 
-                    <Card.Footer > {projectCompleted ? <Text fontSize={["xs", "sm", "md", "md",]}>Status: Completed</Text> : <Text>Status: Work in Progress</Text>}</Card.Footer>
+                    <Card.Footer > {projectCompleted ? <Text fontWeight={"light"} fontSize={["md",]}>Status: Completed</Text> : <Text fontWeight={"light"} fontSize={["md",]}>Status: Work in Progress</Text>}</Card.Footer>
 
                 </Box>
             </Card.Root>

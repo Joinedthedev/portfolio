@@ -5,6 +5,9 @@ import { ColorModeProvider } from '../components/ui/color-mode'
 export const metadata: Metadata = {
     title: 'Salim Portfolio',
     description: 'My personal blog and portfolio',
+    icons:{
+        icon:"/Professional.jpg"
+    }
 }
 
 export default function RootLayout({

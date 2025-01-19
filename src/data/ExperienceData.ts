@@ -40,8 +40,8 @@ export const experiences: experienceTimeLineProps[] = [
         location: "South Korea, Remote",
         date: "Apr 2023-Nov 2023",
         logo: "/inclusiveislam_logo.jpg",
-        description: "Collaborated with design and data team to create a Muslim Matching Making service using HTML, CSS, Javascript, and Wordpress."
-
+        description: "Collaborated with design and data team to create a Muslim Matching Making service using HTML, CSS, Javascript, and Wordpress.",
+        
     },
 
     {
@@ -50,8 +50,9 @@ export const experiences: experienceTimeLineProps[] = [
         location: "Abuja, Nigeria",
         date: "Jun 2022- Oct 2023",
         logo: "/ubecLogo.png",
-        description: "Built a C# and WinForms data entry application that improved data collection efficiency for school principals across 50 schools in Nigeria, provided technical support resolving computer based issues, and contributed to fixing critical bugs through code reviews and debugging."
-
+        description: "Built a C# and WinForms data entry application that improved data collection efficiency for school principals across 50 schools" +
+            " in Nigeria, provided technical support resolving computer based issues, and contributed to fixing critical bugs through code reviews and debugging.",
+        companyLink: "https://ubec.gov.ng/"
     },
 
     {
@@ -60,8 +61,9 @@ export const experiences: experienceTimeLineProps[] = [
         location: "Abuja, Nigeria",
         date: "Jan 2022- Jun 2024",
         logo: "/nileUni.jpg",
-        description: "Helped over 100+ new students learn about Computer Science concepts. "+
-         "Gave introductions on Data Structures and Algorithms, Web Programming, Object Oriented Programming "
+        description: "Helped over 100+ new students learn about Computer Science concepts. " +
+            "Gave introductions on Data Structures and Algorithms, Web Programming, Object Oriented Programming ",
+        companyLink: "https://nileuniversity.edu.ng/"
 
     },
 

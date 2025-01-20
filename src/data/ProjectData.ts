@@ -2,6 +2,7 @@ import { IconType } from "react-icons";
 import { FaBullseye } from "react-icons/fa";
 
 import { SiBootstrap, SiChakraui, SiCss3, SiFirebase, SiHtml5, SiJavascript, SiMysql, SiNextdotjs, SiPrisma, SiReact, SiRecoil, SiRedux, SiStripe, SiTailwindcss, SiTypescript, SiVite } from "react-icons/si";
+
 export type ProjectCardProps = {
     projectName: string;
     projectDescription: string;

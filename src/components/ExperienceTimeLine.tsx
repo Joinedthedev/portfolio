@@ -31,9 +31,9 @@ const ExperienceTimeLine = ({ nameOfCompany, position, date, logo, description, 
                     <TimelineTitle>{position}</TimelineTitle>
 
                     <TimelineDescription>
-                        
-                            🏢 {nameOfCompany}
-                     
+
+                        🏢 {nameOfCompany}
+
                     </TimelineDescription>
 
                     <TimelineDescription>📍 {location}</TimelineDescription>

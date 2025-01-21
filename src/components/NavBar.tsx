@@ -61,7 +61,7 @@ export const NavBar = () => {
                             <RxHamburgerMenu />
                         </IconButton>
                     </MenuTrigger>
-                    <MenuContent>
+                    <MenuContent bg={bg}>
                         <MenuItem value='About Me'>
                             <ScrollLink smooth={true} duration={500} to={"about-me"} > About Me</ScrollLink>
                         </MenuItem>
@@ -86,12 +86,12 @@ export const NavBar = () => {
             )}
             <Flex align={"center"} ml={"auto"} gap={2}>
 
-            <Link href="https://www.youtube.com/@SalimCantCode">
+                <Link href="https://www.youtube.com/@SalimCantCode">
                     <Icon color={iconColor} size={'lg'} bg={"none"}>
                         <GrYoutube />
                     </Icon>
                 </Link>
-                
+
                 <Link href='https://www.linkedin.com/in/salim-babaji'>
                     <Icon color={iconColor} size={'lg'} bg={"none"}>
                         <GrLinkedinOption />

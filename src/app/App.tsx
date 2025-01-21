@@ -16,13 +16,11 @@ function App() {
   useEffect(() => {
     loadingTimer.current = window.setTimeout(() => {
       setIsLoading(false)
-      console.log("timer has been removed")
     }, 1000);
 
     return () => {
       if (loadingTimer.current !== null) {
         clearTimeout(loadingTimer.current)
-        console.log("timer has been cleared")
       }
     };
   }, [])
@@ -31,9 +29,7 @@ function App() {
   return (
     <>
       {isLoading ?
-        
-          <Loader bgColor={bgColor} />
-       
+        <Loader bgColor={bgColor} />
         :
         <Box bg={bgColor}>
           <NavBar />

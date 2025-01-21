@@ -1,4 +1,4 @@
-import { Box, Button, CollapsibleContent, CollapsibleRoot, CollapsibleTrigger, Heading, HStack, Link, SimpleGrid, VStack } from '@chakra-ui/react'
+import { Box, Button, CollapsibleContent, CollapsibleRoot, CollapsibleTrigger, Heading, HStack, Link, SimpleGrid, useBreakpointValue, VStack } from '@chakra-ui/react'
 import { useState } from 'react'
 import { FaArrowDown, FaArrowUp } from 'react-icons/fa'
 import { projectCardArray } from '../data/ProjectData'
@@ -10,7 +10,8 @@ const Projects = () => {
     const colorVibrant = useColorModeValue("blue.500", "blue.300");
     const [isCollapseOpen, setIsCollapseOpen] = useState(false);
     const buttonText = isCollapseOpen ? "View Less" : "View More";
-
+    const isTablet = useBreakpointValue({ base: false, xs: false, sm: false, md: false, lg: true, xl: false })
+    const arrayNumber = isTablet ? 3 : 4
 
 
     return (
@@ -20,8 +21,8 @@ const Projects = () => {
                 <Heading fontWeight={"light"} fontSize={["lg", " xl"]}> Some cool stuff I've built.</Heading>
             </VStack>
             <Box >
-                <SimpleGrid justifyContent={"center"} gap={10} columns={[1, 2, 3, 4]}  >
-                    {projectCardArray.slice(0, 4).map((project, index) => (
+                <SimpleGrid justifyContent={"center"} gap={10} columns={[1, 2, 2, 3, 4]}  >
+                    {projectCardArray.slice(0, arrayNumber).map((project, index) => (
 
                         <ProjectCards key={index}
                             isPublic={project.isPublic}
@@ -40,8 +41,8 @@ const Projects = () => {
                 <Box mt={5}>
                     <CollapsibleRoot onExitComplete={() => setIsCollapseOpen(false)} onOpenChange={() => setIsCollapseOpen(true)} display={"flex"} flexDirection={"column"} justifyContent={"center"} >
                         <CollapsibleContent>
-                            <SimpleGrid justifyContent={"center"} gap={10} columns={[1, 2, 3, 4]}  >
-                                {projectCardArray.slice(4).map((project, index) => (
+                            <SimpleGrid justifyContent={"center"} gap={10} columns={[1, 2, 2, 3, 4]}  >
+                                {projectCardArray.slice(arrayNumber).map((project, index) => (
                                     <ProjectCards key={index}
                                         isPublic={project.isPublic}
                                         projectName={project.projectName}
@@ -60,7 +61,7 @@ const Projects = () => {
                             <CollapsibleTrigger>
 
                                 <Button bg={colorVibrant}>
-                                    {buttonText} {isCollapseOpen ? <FaArrowUp /> : <FaArrowDown/>}
+                                    {buttonText} {isCollapseOpen ? <FaArrowUp /> : <FaArrowDown />}
                                 </Button>
                             </CollapsibleTrigger>
                             <Link variant={"plain"} href='mailto:salimahmedbabaji@gmail.com'>

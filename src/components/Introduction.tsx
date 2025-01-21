@@ -5,7 +5,7 @@ const Introduction = () => {
     return (
 
         <HStack mt={"100px"} p={5} alignItems={"center"} justifyContent={"center"}>
-            <Heading lineHeight={"40px"} textAlign={"center"} textWrap={"balance"} fontSize={[ "4xl", "6xl"]} my={6}>
+            <Heading lineHeight={["40px","90px","40px"]} textAlign={"center"} textWrap={"balance"} fontSize={[ "4xl", "6xl"]} my={6}>
                 <Typewriter
                     options={{
                         loop: true,

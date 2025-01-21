@@ -17,7 +17,7 @@ const AboutMeFr = () => {
           <Heading fontWeight={"light"} fontSize={["lg", " xl"]}> Learn a little about me.</Heading>
         </VStack>
 
-        <Text textAlign={isMobile ? 'justify' : "left"} pt={2} fontSize={["lg", "lg"]}>
+        <Text textAlign={isMobile ? 'justify' : "left"} pt={2} fontSize={[ "lg"]}>
           I love to build and I love to solve problems. Lucky for me, it just so happens that to solve problems,
           you need to build solutions. So I build things. I'm a Software Engineer with a knack for creative solutions, a Computer Science Graduate, and a writer on my free time.
           I'm always eager to learn new tech, solve new problems, then rinse and repeat on my own or with a team. I'm currently working on a blog (coming very very soon) where I can properly yap but for now,
@@ -54,7 +54,7 @@ const AboutMeFr = () => {
             boxSize={"250px"}
             src="/Professional.jpg" />
 
-          <Link href="mailto:salimahmedbabaji@gmail.com" variant={"plain"}><Button bg={colorVibrant}  size={"lg"}> Contact Me</Button></Link>
+          <Link href="mailto:salimahmedbabaji@gmail.com" variant={"plain"}><Button bg={colorVibrant}  size={"lg"}> Contact Me ✉️</Button></Link>
         </VStack>
         :
         <VStack ml={"auto"}>

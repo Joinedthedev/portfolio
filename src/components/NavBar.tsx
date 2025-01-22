@@ -1,11 +1,10 @@
-import { useState, useEffect, useRef } from 'react';
-import { Flex, Icon, IconButton, Link, useBreakpointValue } from '@chakra-ui/react';
+import { Flex, Icon, IconButton, Link, useBreakpointValue, Box } from '@chakra-ui/react';
+import { useEffect, useRef, useState } from 'react';
 import { GrGithub, GrLinkedinOption, GrMail, GrYoutube } from "react-icons/gr";
 import { RxHamburgerMenu } from 'react-icons/rx';
+import { Link as ScrollLink } from 'react-scroll';
 import { ColorModeButton, useColorModeValue } from './ui/color-mode';
 import { MenuContent, MenuItem, MenuRoot, MenuTrigger, } from "./ui/menu";
-import { Link as ScrollLink } from 'react-scroll'
-import { SiYoutube } from 'react-icons/si';
 
 export const NavBar = () => {
     const isMobile = useBreakpointValue({ base: true, xs: true, sm: true, md: false, lg: false });
@@ -61,21 +60,22 @@ export const NavBar = () => {
                             <RxHamburgerMenu />
                         </IconButton>
                     </MenuTrigger>
-                    <MenuContent bg={bg}>
-                        <MenuItem value='About Me'>
+                    <MenuContent>
+                        <MenuItem bg={bg} value='About Me'>
                             <ScrollLink smooth={true} duration={500} to={"about-me"} > About Me</ScrollLink>
                         </MenuItem>
-                        <MenuItem value='Experience'>
+                        <MenuItem bg={bg} value='Experience'>
                             <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} to='exp'> Experience</ScrollLink>
                         </MenuItem>
-                        <MenuItem value='Projects'>
+                        <MenuItem bg={bg} value='Projects'>
                             <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} to='projects'> Projects</ScrollLink>
                         </MenuItem>
-                        {/* <MenuItem value='Extras'>
-                            <ScrollLink style={{cursor:"pointer"}} smooth={true} duration={500} to='exp'> Extras</ScrollLink>
-                        </MenuItem> */}
+                        {/* <MenuItem  bg={bg} value='Extras'>
+                                <ScrollLink style={{cursor:"pointer"}} smooth={true} duration={500} to='exp'> Extras</ScrollLink>
+                            </MenuItem> */}
                     </MenuContent>
                 </MenuRoot>
+
             ) : (
                 <Flex gap={4} direction={"row"}>
                     <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} to='about-me'> About Me</ScrollLink>

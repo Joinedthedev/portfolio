@@ -1,6 +1,6 @@
-import { Image, Text, useBreakpointValue, Link } from '@chakra-ui/react'
-import { experienceTimeLineProps } from '../data/ExperienceData'
-import { TimelineConnector, TimelineContent, TimelineDescription, TimelineItem, TimelineTitle } from './ui/timeline'
+import { Image, Text, useBreakpointValue } from '@chakra-ui/react';
+import { experienceTimeLineProps } from '../data/ExperienceData';
+import { TimelineConnector, TimelineContent, TimelineDescription, TimelineItem, TimelineTitle } from './ui/timeline';
 
 
 const ExperienceTimeLine = ({ nameOfCompany, position, date, logo, description, location }: experienceTimeLineProps) => {

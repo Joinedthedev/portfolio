@@ -1,4 +1,4 @@
-import { Flex, Icon, IconButton, Link, useBreakpointValue, Box } from '@chakra-ui/react';
+import { Flex, Icon, IconButton, Link, useBreakpointValue } from '@chakra-ui/react';
 import { useEffect, useRef, useState } from 'react';
 import { GrGithub, GrLinkedinOption, GrMail, GrYoutube } from "react-icons/gr";
 import { RxHamburgerMenu } from 'react-icons/rx';

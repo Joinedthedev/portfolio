@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Provider } from '../components/ui/provider'
 import { ColorModeProvider } from '../components/ui/color-mode'
+import { Analytics } from '@vercel/analytics/next'
 
 export const metadata: Metadata = {
     title: 'Salim Portfolio',
@@ -24,6 +25,7 @@ export default function RootLayout({
                         {children}
                         </ColorModeProvider>
                     </Provider>
+                    <Analytics/>
                 </div>
             </body>
         </html>

@@ -81,7 +81,7 @@ export const NavBar = () => {
                     <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} to='about-me'> About Me</ScrollLink>
                     <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} to='exp'> Experience</ScrollLink>
                     <ScrollLink style={{ cursor: "pointer" }} smooth={true} duration={500} to='projects'> Projects</ScrollLink>
-                    {/* <ScrollLink style={{cursor:"pointer"}} to='#extras'> Extras</ScrollLink> */}
+                    <ScrollLink style={{cursor:"not-allowed", fontWeight:"lighter", opacity:"0.5"}} to='blog'> Blog</ScrollLink>
                 </Flex>
             )}
             <Flex align={"center"} ml={"auto"} gap={2}>

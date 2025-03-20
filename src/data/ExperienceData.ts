@@ -12,11 +12,11 @@ export const experiences: experienceTimeLineProps[] = [
 
     {
         position: "Fullstack Engineer",
-        nameOfCompany: "Freelancer",
+        nameOfCompany: "Level Up Tech LTD.",
         location: "Remote",
         date: "Nov 2024- Present",
-        logo: "/Professional.jpg",
-        description: "Working on various projects solving problems for clients by building software."
+        logo: "/level.png",
+        description: "Solving nigeria's problems one line of code at a time."
     },
 
 

@@ -3,6 +3,7 @@ import { Box, Button, CollapsibleContent, CollapsibleRoot, CollapsibleTrigger, H
 import { skillsArray } from '../data/SkillsData'
 import Skills from './Skills'
 import { useColorModeValue } from './ui/color-mode'
+import { BiDownload } from 'react-icons/bi'
 
 const AboutMeFr = () => {
 
@@ -55,6 +56,7 @@ const AboutMeFr = () => {
             src="/Professional.jpg" />
 
           <Link href="mailto:salimahmedbabaji@gmail.com" variant={"plain"}><Button bg={colorVibrant}  size={"lg"}> Contact Me ✉️</Button></Link>
+          <a href="/SalimResume.pdf" download><Button size={["lg"]}> Download Resume <BiDownload/> </Button></a>
         </VStack>
         :
         <VStack ml={"auto"}>
@@ -64,7 +66,10 @@ const AboutMeFr = () => {
             boxSize={"300px"}
             src="/Professional.jpg" />
 
-          <Link variant={"plain"} href='mailto:salimahmedbabaji@gmail.com'><Button bg={colorVibrant}> Contact Me ✉️</Button></Link>
+          <HStack>
+            <Link variant={"plain"} href='mailto:salimahmedbabaji@gmail.com'><Button bg={colorVibrant}> Contact Me ✉️</Button></Link>
+            <a href="/SalimResume.pdf" download><Button>Resume<BiDownload/> </Button></a>
+          </HStack>
         </VStack>
       }
     </HStack>

@@ -8,6 +8,7 @@ import { useColorModeValue } from '../components/ui/color-mode'
 import { useEffect, useState } from 'react'
 import { useRef } from 'react'
 import Loader from '../components/Loader'
+import BackToTop from '../components/BackToTop'
 function App() {
 
   const loadingTimer = useRef<number | null>(null);
@@ -37,6 +38,7 @@ function App() {
           <AboutMeFr />
           <Experience />
           <Projects />
+          <BackToTop />
         </Box>
       }
     </>

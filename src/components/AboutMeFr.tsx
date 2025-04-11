@@ -56,7 +56,7 @@ const AboutMeFr = () => {
             src="/Professional.jpg" />
 
           <Link href="mailto:salimahmedbabaji@gmail.com" variant={"plain"}><Button bg={colorVibrant}  size={"lg"}> Contact Me ✉️</Button></Link>
-          <a href="/SalimResume.pdf" download><Button size={["lg"]}> Download Resume <BiDownload/> </Button></a>
+          <a href="/SalimResumeReform.pdf" download><Button size={["lg"]}> Download Resume <BiDownload/> </Button></a>
         </VStack>
         :
         <VStack ml={"auto"}>
@@ -68,7 +68,7 @@ const AboutMeFr = () => {
 
           <HStack>
             <Link variant={"plain"} href='mailto:salimahmedbabaji@gmail.com'><Button bg={colorVibrant}> Contact Me ✉️</Button></Link>
-            <a href="/SalimResume.pdf" download><Button>Resume<BiDownload/> </Button></a>
+            <a href="/SalimResumeReform.pdf" download><Button>Resume<BiDownload/> </Button></a>
           </HStack>
         </VStack>
       }

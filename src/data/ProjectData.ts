@@ -1,7 +1,7 @@
 import { IconType } from "react-icons";
 
 
-import { SiBootstrap, SiChakraui, SiCss3, SiFirebase, SiHtml5, SiJavascript, SiMysql, SiNextdotjs, SiPrisma, SiReact, SiRecoil, SiRedux, SiStripe, SiTailwindcss, SiTypescript, SiVite } from "react-icons/si";
+import { SiBootstrap, SiChakraui, SiCss3, SiFirebase, SiHtml5, SiJavascript, SiMapbox, SiMysql, SiNextdotjs, SiOpenai, SiPrisma, SiReact, SiRecoil, SiRedux, SiStripe, SiTailwindcss, SiTypescript, SiVite } from "react-icons/si";
 
 export type ProjectCardProps = {
     projectName: string;
@@ -16,17 +16,35 @@ export type ProjectCardProps = {
 }
 
 export const projectCardArray: ProjectCardProps[] = [
+   
+    {
+        projectName: "WhereBNB",
+        projectDescription: "An AI powered search engine that helps you find your ideal home. Just put in your budget and location and it'll return a list of properties for you to choose from.",
+        projectThumbnail: "/whereBNB.png",
+        isPublic: false,
+        isLive: true,
+        projectCompleted: false,
+        projectStack: [
+            SiNextdotjs,
+            SiTypescript,
+            SiChakraui,
+            SiMapbox,
+            SiOpenai,
+        ]
+    },
+
     {
         projectName: "Personal Blog",
         projectDescription: "A personal blog where I write about my journey as a developer, and share my thoughts on tech and life.",
         projectThumbnail: "/wip.png",
+        liveLink:"https://www.wherebnb.homes",
         isPublic: false,
         isLive: false,
         projectCompleted: false,
         projectStack: [
             SiNextdotjs,
             SiTypescript,
-            SiBootstrap,
+            SiChakraui,
             SiVite,
         ]
     },
@@ -35,7 +53,6 @@ export const projectCardArray: ProjectCardProps[] = [
         projectName: "Noire E-Commerce Store ",
         projectDescription: "I'm buidling a fullstack E-Commerce store with a custom CMS, Items, Cart, Search, Filter and Payment validation.",
         projectThumbnail: "/noire.png",
-
         isPublic: false,
         isLive: false,
         projectCompleted: false,

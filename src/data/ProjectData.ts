@@ -24,7 +24,7 @@ export const projectCardArray: ProjectCardProps[] = [
         liveLink:"https://www.wherebnb.homes",
         isPublic: false,
         isLive: true,
-        projectCompleted: false,
+        projectCompleted: true,
         projectStack: [
             SiNextdotjs,
             SiTypescript,

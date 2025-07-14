@@ -6,17 +6,20 @@ export type experienceTimeLineProps = {
     description: string;
     location: string;
     companyLink?: string;
+    extraButton?: null;
 }
 
 export const experiences: experienceTimeLineProps[] = [
 
+    
     {
-        position: "Fullstack Engineer",
-        nameOfCompany: "Level Up Tech LTD.",
-        location: "Remote",
-        date: "Nov 2024- Present",
-        logo: "/level.png",
-        description: "Solving nigeria's problems one line of code at a time."
+        position: "Frontend Developer Intern",
+        nameOfCompany: "Tsari 360 Consulting",
+        location: "Abuja, FCT",
+        date: "July 2025-Present",
+        logo: "/tsari.jpg",
+        description: "Thinking strategically and reimagining industries one line of code at a time. #Ad Astra",
+        companyLink: "https://tsari.co"
     },
 
 
@@ -28,7 +31,7 @@ export const experiences: experienceTimeLineProps[] = [
         date: "Jan 2024-Apr 2024",
         logo: "/CSL.jpg",
         description: " Engineered dynamic flashcards and an interactive drag and drop quiz based on user selected course" +
-            " content for a platform with 85k+ users using React, Typescript, and Next",
+            " content for a platform with 90k+ users using React, Typescript, and Next",
         companyLink: "https://www.compscilib.com/"
 
 

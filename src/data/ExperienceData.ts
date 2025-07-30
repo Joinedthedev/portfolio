@@ -13,7 +13,7 @@ export const experiences: experienceTimeLineProps[] = [
 
     
     {
-        position: "Frontend Developer Intern",
+        position: "Junior Frontend Developer",
         nameOfCompany: "Tsari 360 Consulting",
         location: "Abuja, FCT",
         date: "July 2025-Present",

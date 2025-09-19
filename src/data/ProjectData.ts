@@ -17,6 +17,22 @@ export type ProjectCardProps = {
 
 export const projectCardArray: ProjectCardProps[] = [
    
+    {
+        projectName: "WhereBNB",
+        projectDescription: "An AI powered search engine that helps you find your ideal home. Just put in your budget and location and it'll return a list of properties for you to choose from.",
+        projectThumbnail: "/whereBNB.png",
+        liveLink:"https://www.wherebnb.homes",
+        isPublic: false,
+        isLive: true,
+        projectCompleted: true,
+        projectStack: [
+            SiNextdotjs,
+            SiTypescript,
+            SiChakraui,
+            SiMapbox,
+            SiOpenai,
+        ]
+    },
 
     {
         projectName: "Personal Blog",

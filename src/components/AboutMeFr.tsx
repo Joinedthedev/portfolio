@@ -57,7 +57,7 @@ const AboutMeFr = () => {
             src="/Professional.jpg" />
 
           <Link href="mailto:salimahmedbabaji@gmail.com" variant={"plain"}><Button bg={colorVibrant}  size={"lg"}> Contact Me ✉️</Button></Link>
-          <a href="https://docs.google.com/document/d/1KhCjnSUKspdiSDsVePfPbHiWUtx_c8qp7ag3Qukl8RE/edit?usp=sharing" ><Button size={["lg"]}> View Resume <BsFolder/> </Button></a>
+          <a href="https://docs.google.com/document/d/1016tjg2SWwZ09ctZXAjUTFCMvL3q4mGxwRj2RT3Fvec/edit?usp=sharing" ><Button size={["lg"]}> View Resume <BsFolder/> </Button></a>
         </VStack>
         :
         <VStack ml={"auto"}>
@@ -69,7 +69,7 @@ const AboutMeFr = () => {
 
           <HStack>
             <Link variant={"plain"} href='mailto:salimahmedbabaji@gmail.com'><Button bg={colorVibrant}> Contact Me ✉️</Button></Link>
-            <a href="https://docs.google.com/document/d/1KhCjnSUKspdiSDsVePfPbHiWUtx_c8qp7ag3Qukl8RE/edit?usp=sharing" download><Button>View Resume<BsFolder/> </Button></a>
+            <a href="https://docs.google.com/document/d/1016tjg2SWwZ09ctZXAjUTFCMvL3q4mGxwRj2RT3Fvec/edit?usp=sharing" download><Button>View Resume<BsFolder/> </Button></a>
           </HStack>
         </VStack>
       }

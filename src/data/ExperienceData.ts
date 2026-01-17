@@ -13,7 +13,7 @@ export const experiences: experienceTimeLineProps[] = [
 
     
     {
-        position: "Junior Frontend Developer",
+        position: "Frontend Engineer",
         nameOfCompany: "Tsari 360 Consulting",
         location: "Abuja, FCT",
         date: "July 2025-Present",
@@ -38,12 +38,12 @@ export const experiences: experienceTimeLineProps[] = [
     },
 
     {
-        position: "Web Developer Intern",
+        position: "Frontend Engineer Intern",
         nameOfCompany: "Inclusive Islam",
         location: "South Korea, Remote",
         date: "Apr 2023-Nov 2023",
         logo: "/inclusiveislam_logo.jpg",
-        description: "Collaborated with design and data team to create a Muslim Matching Making service using HTML, CSS, Javascript, and Wordpress.",
+        description: "Collaborated with design and data team to create a Muslim Matching Making service using HTML, CSS, PHP, and Wordpress.",
         
     },
 

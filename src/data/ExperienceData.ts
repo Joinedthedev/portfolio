@@ -18,7 +18,9 @@ export const experiences: experienceTimeLineProps[] = [
         location: "Abuja, FCT",
         date: "July 2025-Present",
         logo: "/tsari.jpg",
-        description: "Thinking strategically and reimagining industries one line of code at a time. #Ad Astra",
+        description: "Built and scaled a 500+ user PWA with React and TypeScript, engineered Apple Wallet–style CSS animations, implemented real-time UI capture with HTML-to-Image," +
+        "and modernized the codebase through" +
+       " a full React migration for performance and maintainability.",
         companyLink: "https://tsari.co"
     },
 

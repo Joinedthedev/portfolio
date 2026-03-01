@@ -1,4 +1,4 @@
-import { IconType } from "react-icons";
+import type { SVGAttributes } from "react";
 import { SiBootstrap, SiChakraui, SiCss3, SiFirebase, SiHtml5, SiJavascript, SiMysql, SiNextdotjs, SiPhp, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { TbBrandCSharp } from "react-icons/tb";
 
@@ -7,6 +7,8 @@ export type SkillProps = {
     logo: IconType
     description: string;
 };
+
+type IconType = (props: SVGAttributes<SVGElement>) => JSX.Element;
 
 export const skillsArray: SkillProps[] = [
     {

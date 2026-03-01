@@ -1,4 +1,4 @@
-import { IconType } from "react-icons";
+import type { SVGAttributes } from "react";
 
 
 import { SiBootstrap, SiChakraui, SiCss3, SiFirebase, SiHtml5, SiJavascript, SiMapbox, SiMysql, SiNextdotjs, SiOpenai, SiPrisma, SiReact, SiRecoil, SiRedux, SiStripe, SiTailwindcss, SiTypescript, SiVite } from "react-icons/si";
@@ -14,6 +14,8 @@ export type ProjectCardProps = {
     isPublic: boolean
     liveLink?: string;
 }
+
+type IconType = (props: SVGAttributes<SVGElement>) => JSX.Element;
 
 export const projectCardArray: ProjectCardProps[] = [
    

@@ -22,7 +22,7 @@ const AboutMeFr = () => {
         <Text textAlign={isMobile ? 'justify' : "left"} pt={2} fontSize={[ "lg"]}>
           I love to build and I love to solve problems. Lucky for me, it just so happens that to solve problems,
           you need to build solutions. So I build things. I'm a Software Engineer with a knack for creative solutions, a Computer Science Graduate, and a writer on my free time.
-          I'm always eager to learn new tech, solve new problems, then rinse and repeat on my own or with a team. I'm currently working on a blog (coming very very soon) where I can properly yap but for now,
+          I'm always eager to learn new tech, solve new problems, then rinse and repeat on my own or with a team. I'm currently working on a blog (coming very very soon) where I can properly write but for now,
           check out what I've been up to below!
         </Text>
 

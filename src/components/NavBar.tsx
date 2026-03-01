@@ -87,7 +87,7 @@ export const NavBar = () => {
             <Flex align={"center"} ml={"auto"} gap={2}>
 
                 <Link href="https://www.youtube.com/@SalimCantCode">
-                    <Icon color={iconColor} size={'lg'} bg={"none"}>
+                    <Icon mt={1} color={iconColor} size={'lg'} bg={"none"}>
                         <GrYoutube />
                     </Icon>
                 </Link>

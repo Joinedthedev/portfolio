@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     loadingTimer.current = window.setTimeout(() => {
       setIsLoading(false)
-    }, 1000);
+    }, 400);
 
     return () => {
       if (loadingTimer.current !== null) {

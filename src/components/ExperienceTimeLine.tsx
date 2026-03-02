@@ -13,8 +13,8 @@ const ExperienceTimeLine = ({ nameOfCompany, position, date, logo, description, 
 
             <TimelineItem>
                 {!isDesktop &&
-                    <TimelineContent width="auto">
-                        <TimelineTitle whiteSpace="nowrap">
+                    <TimelineContent width="200px">
+                        <TimelineTitle fontSize={"11px"} whiteSpace="nowrap">
                             {date}
 
                         </TimelineTitle>

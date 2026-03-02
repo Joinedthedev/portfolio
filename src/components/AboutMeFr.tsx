@@ -1,10 +1,12 @@
 "use client"
-import { Box, Button, CollapsibleContent, CollapsibleRoot, CollapsibleTrigger, Heading, HStack, Image, Link, Text, useBreakpointValue, VStack } from '@chakra-ui/react'
+import { Box, Button, CollapsibleContent, CollapsibleRoot, CollapsibleTrigger, Heading, HStack, Link, Text, useBreakpointValue, VStack } from '@chakra-ui/react'
 import { skillsArray } from '../data/SkillsData'
 import Skills from './Skills'
 import { useColorModeValue } from './ui/color-mode'
 import { BiDownload } from 'react-icons/bi'
 import { BsEyeFill, BsFillEyeSlashFill, BsFolder } from 'react-icons/bs'
+import NextImage from 'next/image'
+import { Image } from '@chakra-ui/react'
 
 const AboutMeFr = () => {
 
@@ -50,22 +52,31 @@ const AboutMeFr = () => {
 
       {isMobile ?
         <VStack alignItems={"center"}  mt={"100px"} mx="auto" >
-          <Image
-            borderRadius="full"
-            fit="cover"
-            boxSize={"250px"}
-            src="/Professional.jpg" />
+
+          <Image asChild borderRadius="full" boxSize="250px" overflow="hidden">
+            <NextImage
+              src="/Professional.jpg"
+              alt="Portrait of Salim Ahmed Babaji"
+              width={250}
+              height={250}
+              style={{ objectFit: "cover" }}
+            />
+          </Image>
 
           <Link href="mailto:salimahmedbabaji@gmail.com" variant={"plain"}><Button bg={colorVibrant}  size={"lg"}> Contact Me ✉️</Button></Link>
           <a href="https://docs.google.com/document/d/1016tjg2SWwZ09ctZXAjUTFCMvL3q4mGxwRj2RT3Fvec/edit?usp=sharing" ><Button size={["lg"]}> View Resume <BsFolder/> </Button></a>
         </VStack>
         :
         <VStack ml={"auto"}>
-          <Image
-            borderRadius="full"
-            fit="cover"
-            boxSize={"300px"}
-            src="/Professional.jpg" />
+          <Image asChild borderRadius="full" boxSize="300px" overflow="hidden">
+            <NextImage
+              src="/Professional.jpg"
+              alt="Portrait of Salim Ahmed Babaji"
+              width={300}
+              height={300}
+              style={{ objectFit: "cover" }}
+            />
+          </Image>
 
           <HStack>
             <Link variant={"plain"} href='mailto:salimahmedbabaji@gmail.com'><Button bg={colorVibrant}> Contact Me ✉️</Button></Link>

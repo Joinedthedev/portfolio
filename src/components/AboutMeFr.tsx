@@ -55,7 +55,7 @@ const AboutMeFr = () => {
 
           <Image asChild borderRadius="full" boxSize="250px" overflow="hidden">
             <NextImage
-              src="/Professional.jpg"
+              src="/Professional-600.jpg"
               alt="Portrait of Salim Ahmed Babaji"
               width={250}
               height={250}
@@ -70,7 +70,7 @@ const AboutMeFr = () => {
         <VStack ml={"auto"}>
           <Image asChild borderRadius="full" boxSize="300px" overflow="hidden">
             <NextImage
-              src="/Professional.jpg"
+              src="/Professional-600.jpg"
               alt="Portrait of Salim Ahmed Babaji"
               width={300}
               height={300}

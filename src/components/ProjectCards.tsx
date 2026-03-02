@@ -1,5 +1,6 @@
 import { Box, Button, Card, HStack, Image, Link, Text } from '@chakra-ui/react'
 import React from 'react'
+import NextImage from 'next/image'
 
 import { ProjectCardProps } from '../data/ProjectData'
 import { useColorModeValue } from './ui/color-mode'

@@ -98,7 +98,7 @@ export const NavBar = () => {
                     </Icon>
                 </Link>
 
-                <Link href='https://github.com/Joinedthedev'>
+                <Link href='https://github.com/SalimCantCode'>
                     <Icon color={iconColor} size={'lg'} bg={"none"}>
                         <GrGithub />
                     </Icon>
